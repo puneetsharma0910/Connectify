@@ -10,6 +10,10 @@ frontend/.env
 frontend/dist/
 backend/dist/
 
+.env.local
+.env.development.local
+.env
+
 # System files
 .DS_Store
 Thumbs.db
