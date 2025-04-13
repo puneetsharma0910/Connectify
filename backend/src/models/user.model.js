@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  email: {
+  username: {  // This is the field you're using in your controller
     type: String,
     required: true,
     unique: true,
@@ -16,8 +16,9 @@ const userSchema = new mongoose.Schema({
   },
   token: {
     type: String,
-    required: true,
+    default: "",
   },
 });
+
 const User = mongoose.model("User", userSchema);
-export default {User};
+export {User};
